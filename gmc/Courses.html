@@ -22,7 +22,7 @@
                 </div> 
             </header> 
                 <div class="img23">
-                      <h1 class="titre"> COURSES</h1>
+                      <h1> COURSES</h1>
                     </div>       
             <div class="CR">
                 <img src="image/h1.png">
@@ -40,30 +40,28 @@
                 <img src="image/h9.png">
             </div>
   
-             <form >
                 <center>
             <h4>feedback</h4>
-            <button> B </button>
-            <button> I</button>
-            <button>Underline</button>
+            <button onclick="bold();"> B </button>
+            <button onclick="italic();"> I</button>
+            <button onclick="underline();">Underline</button>
             
-                <select> 
-                    <OPTION> 20px </OPTION>
-                    <option>10px</option>
+                <select onchange="changeSize();" id="selectSize"> 
+                    <option value="10px"> 10px </option>
+                    <option value="20px"> 20px </option>
+                    <option value="30px"> 30px </option>
                 </select>
             
     
-        <select>
-            <option> Arial</option>
-            <option> Verdana</option>
-            <option> Geneva</option>
+        <select onchange="change();" id=select>
+            <option value="Arial"> Arial</option>
+            <option value="Verdana"> Verdana</option>
+            <option value="Geneva"> Geneva</option>
         </select>
         <br>
-            <div class="textarea">
-              <textarea cols="80" rows="5"></textarea>
-           </div>
+              <textarea id="textarea" cols="80" rows="5"></textarea>
     </center>
-    </form>     
+    <script src="main.js"></script>   
     
 </body>
 </html>

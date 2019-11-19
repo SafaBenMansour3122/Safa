@@ -97,8 +97,9 @@ h2{
     text-align: center; 
 }
 
-.textarea{
-    margin-top: 15px;
+#textarea{
+    max-width: 500px;
+    max-height: 100px;
 }
 label{
     color: white;
