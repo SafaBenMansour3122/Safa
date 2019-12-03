@@ -6,39 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Courses</title>
     <link rel="stylesheet" href="style.css">
+    <!--<script src="/jquery.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script>
+        $(document).ready(function(){
+           $(".img1").mouseenter(function(){
+               $(".btn").fadeIn();
+           });
+           $(".img1").mouseleave(function(){
+               $(".btn").fadeOut();
+           });
+
+               $(".img2").mouseenter(function(){
+                   $(".btn1").fadeIn();
+                   });
+               $(".img2").mouseleave(function(){
+                   $(".btn1").fadeOut();
+                   });
+
+           $(".img3").mouseenter(function(){
+               $(".btn2").fadeIn();
+           });
+           $(".img3").mouseleave(function(){
+               $(".btn2").fadeOut();
+           });
+
+     $(".img4").mouseenter(function(){
+          $(".btn3").fadeIn();
+           });
+     $(".img4").mouseleave(function(){
+          $(".btn3").fadeOut();
+           });
+
+     $(".img5").mouseenter(function(){
+          $(".btn4").fadeIn();
+                   });
+     $(".img5").mouseleave(function(){
+           $(".btn4").fadeOut();
+                   });
+
+     $(".img6").mouseenter(function(){
+            $(".btn5").fadeIn();
+           });
+     $(".img6").mouseleave(function(){
+            $(".btn5").fadeOut();
+           });
+
+                 $(".img7").mouseenter(function(){
+                     $(".btn6").fadeIn();
+                         });
+                 $(".img7").mouseleave(function(){
+                      $(".btn6").fadeOut();
+                         });
+
+                  $(".img8").mouseenter(function(){
+                       $(".btn7").fadeIn();
+                         });
+                  $(".img8").mouseleave(function(){
+                      $(".btn7").fadeOut();
+                   });
+
+                  $(".img9").mouseenter(function(){
+                     $(".btn8").fadeIn();
+                       });
+                  $(".img9").mouseleave(function(){
+                       $(".btn8").fadeOut();
+                       });
+            
+        });
+    </script>
     
 </head>
 <body>
         <header>  
                 <div id="Logo">
-                    <img src="image/Logo.png" width="50px"/>
+                    <img src="image/Logo.png" width="50px" height="50px"/>
                 </div>
                 <div class="hcc">
                    <ul> 
-                       <li><a href="index.html">Home</a></li>
-                       <li><a href="Courses.html">Courses</a></li>
-                       <li><a href="contact.html">Contact</a></li>
+                       <li><a href="index.html" class="nav">Home</a></li>
+                       <li><a href="Courses.html" class="nav">Courses</a></li>
+                       <li><a href="contact.html" class="nav">Contact</a></li>
                    </ul>
                 </div> 
             </header> 
                 <div class="img23">
-                      <h1> COURSES</h1>
-                    </div>       
-            <div class="CR">
-                <img src="image/h1.png">
-                <img src="image/h2.png">
-                <img src="image/h3.png">
+                      <h1 class="cc"> COURSES</h1>
+                    </div>    
+                    <div id="ex1" class="modal">
+                        <p>This is a GoMyCode Track.<br>
+                            Each track has its own goal.<br>
+                            By adopting this track, you chose your own goal.</p></div>
+
+
+             <div class="CR">
+               <div class="img1"> <a href="#ex1" rel="modal:open"><button class="btn btnstyle">View more</button></a> </div>
+               <div class="img2"> <a href="#ex1" rel="modal:open"><button class="btn1 btnstyle">View more</button></a> </div>
+               <div class="img3"> <a href="#ex1" rel="modal:open"><button class="btn2 btnstyle">View more</button></a> </div>
             </div>  
-            <div class="CR1">
-                <img src="image/h4.png">
-                <img src="image/h5.png">
-                <img src="image/h6.png">
+
+            <div class="CR">
+               <div class="img4"> <a href="#ex1" rel="modal:open"><button class="btn3 btnstyle">View more</button></a> </div>
+               <div class="img5"> <a href="#ex1" rel="modal:open"><button class="btn4 btnstyle">View more</button></a> </div>
+               <div class="img6"> <a href="#ex1" rel="modal:open"><button class="btn5 btnstyle">View more</button></a> </div>
             </div> 
-            <div class="CR2">
-                <img src="image/h7.png">
-                <img src="image/h8.png">
-                <img src="image/h9.png">
-            </div>
+            <div class="CR">
+                <div class="img7"> <a href="#ex1" rel="modal:open"><button class="btn6 btnstyle">View more</button></a> </div>
+               <div class="img8"> <a href="#ex1" rel="modal:open"><button class="btn7 btnstyle">View more</button></a> </div>
+               <div class="img9"> <a href="#ex1" rel="modal:open"><button class="btn8 btnstyle">View more</button></a> </div>
+            </div> 
+            
   
                 <center>
             <h4>feedback</h4>
@@ -47,9 +128,9 @@
             <button onclick="underline();">Underline</button>
             
                 <select onchange="changeSize();" id="selectSize"> 
-                    <option value="10px"> 10px </option>
                     <option value="20px"> 20px </option>
                     <option value="30px"> 30px </option>
+                    <option value="40px"> 40px </option>
                 </select>
             
     
@@ -58,6 +139,7 @@
             <option value="Verdana"> Verdana</option>
             <option value="Geneva"> Geneva</option>
         </select>
+        <br>
         <br>
               <textarea id="textarea" cols="80" rows="5"></textarea>
     </center>

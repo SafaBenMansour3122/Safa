@@ -6,6 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
     <link rel="stylesheet" href="style.css">
+    <!--<script src="/jquery.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script>
+        $(document).ready(function(){
+           $(".img1").mouseenter(function(){
+               $(".btn").fadeIn();
+           });
+           $(".img1").mouseleave(function(){
+               $(".btn").fadeOut();
+           });
+
+               $(".img2").mouseenter(function(){
+                   $(".btn1").fadeIn();
+                   });
+               $(".img2").mouseleave(function(){
+                   $(".btn1").fadeOut();
+                   });
+
+           $(".img3").mouseenter(function(){
+               $(".btn2").fadeIn();
+           });
+           $(".img3").mouseleave(function(){
+               $(".btn2").fadeOut();
+           })
+            
+        });
+    </script>
     
 </head>
 <body>
@@ -15,9 +46,9 @@
      </div>
      <div class="hcc">
         <ul> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="nav">Home</a></li>
+            <li><a href="Courses.html" class="nav">Courses</a></li>
+            <li><a href="contact.html" class="nav">Contact</a></li>
         </ul>
      </div> 
 
@@ -28,21 +59,30 @@
             </div>
         </header>    
            <br>
-           <h1> courses</h1>
+           <h1> Courses</h1>
 
-       <div class="CR">
-        <img src="image/h1.png">
-        <img src="image/h2.png">
-        <img src="image/h3.png">
-      </div>
-      <a href="Courses.html"><h4>View more...</h4></a>
-      <hr>
-      <h1 align="center">More about GoMyCode:</h1>
-      <div align="center">
+           <div id="ex1" class="modal">
+            <p>This is a GoMyCode Track.<br>
+                Each track has its own goal.<br>
+                By adopting this track, you chose your own goal.</p>
+            <!--<a href="#" rel="modal:close">Close</a>-->
+          </div>
+        
+         <div class="CR">
+             <div class="img1"> <a href="#ex1" rel="modal:open"><button class="btn btnstyle">View more</button></a> </div>
+             <div class="img2"> <a href="#ex1" rel="modal:open"><button class="btn1 btnstyle">View more</button></a> </div>
+             <div class="img3"> <a href="#ex1" rel="modal:open"><button class="btn2 btnstyle">View more</button></a> </div>
+         </div>
+
+              <a class="VM" href="Courses.html"><h4 >View more...</h4></a>
+                  <hr>
+              <h1 align="center">More about GoMyCode:</h1>
+                <div align="center">
       <iframe width="560" height="315" 
       src="https://www.youtube.com/embed/MkLog_27S6U" 
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen></iframe>
-      <br>
+           <br>
       <script src="main.js"></script>
+      
 </html>
