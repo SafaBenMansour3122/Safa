@@ -3,9 +3,6 @@ body{
     background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
      linear-gradient(127deg, black, black 70.71%), 
      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-    
-   
- 
 }
 body{
     width: 100%;
@@ -88,7 +85,7 @@ h1{
     opacity: 0.5;
  }
 
- .img4{
+.img4{
     background: url("./image/h4.png");
     width:300px;
     height: 200px;
@@ -185,15 +182,15 @@ h4{
     
     font-size: 90px;
     font-family: 'Times New Roman', Times, serif;
-}
-
-h2{
     color: floralwhite;
-    position: absolute;
-    text-align: center; 
 }
 
-#textarea{
+.FK{
+    color: floralwhite;
+    
+}
+
+textarea{
     max-width: 500px;
     max-height: 100px;
 }
@@ -216,10 +213,10 @@ form{
 .VM:hover{
     text-decoration: underline;
 }
-.track{
-    width: 173px;
+.carousel{
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
-
 
 
 
