@@ -1,0 +1,39 @@
+html body{
+    margin: 10px;
+  /* background-color:rgb(58, 57, 57); */
+   
+} 
+
+.logo{
+    height: 50px;
+    width: 180px;
+    padding: 0px;
+    padding-right: 50px;
+}
+.btn{
+    margin-left: 60px;
+}
+.is-module{
+    margin-top: 0;
+    background: url(Image/module.png); background-position-x:left; background-position-y:top;background-repeat: no-repeat;
+    padding: 20px 0 20px 80px;
+}
+.ét{
+    color: purple;
+}
+.inp{
+    width: 550px;
+}
+.fc{
+    width: 50%;
+}
+.im img{
+    width: 200px;
+    height: 242px;
+}
+
+
+
+
+
+

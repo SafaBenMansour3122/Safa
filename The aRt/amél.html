@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>the Art</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<!-- Modal Connexion -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal Inscription -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title is-module" id="exampleModalLabel">  Création de mon compte membre</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--<div class="well well-sm">-->
+            <p> Veuillez utiliser le formulaire suivant pour vous créer un compte membre sur <span class="is-blod"> <b>Exposition Peinture.</b></span></p>
+            <p><span class="glyphicon glyphicon-asterisk ét"></span> Champs obligatoires</p>
+        
+            <div class="form-group">
+               <label for="exampleInputName1"><span class="glyphicon glyphicon-asterisk ét"></span> Votre nom :</label>
+               <input type="text" class="form-control inp" id="exampleInputName1" placeholder="Nom">
+            </div>
+     
+            <div class="form-group">
+               <label for="exampleInputFirstname1"><span class="glyphicon glyphicon-asterisk ét"></span> Votre prénom :</label>
+               <input type="text" class="form-control inp" id="exampleInputFirstname1" placeholder="Prénom">
+            </div>
+     
+            <div class="form-group">
+                 <label for="exampleInputEmail1"><span class="glyphicon glyphicon-asterisk ét"></span> Votre adresse e-mail :</label>
+                 <div class="input-group inp">
+                   <span class="input-group-addon" id="basic-addon1">@</span>
+                   <input type="text" class="form-control" placeholder="e-mail" aria-describedby="basic-addon1">
+                 </div>
+             </div>
+     
+             <div class="form-group">
+                 <label for="exampleInputPassword1"><span class="glyphicon glyphicon-asterisk ét"></span>  Votre mot de passe :</label> 
+                 <div class="input-group inp">
+                    <span class="input-group-addon" id="basic-addon1" ><span class="glyphicon glyphicon-lock" ></span> </span>
+                    <input type="password" class="form-control" placeholder="Passe" aria-describedby="basic-addon1">
+                 </div>
+                 <p style="color: firebrick;"> 8 caractères alphanumériques minimum.<br> Par sécurité, au moins 1 caractère spécial parmi ceux-ci :
+                    # { ^ @ = . , ; : $ % * ? ! + -</p>
+             </div>
+     
+             <div class="form-group">
+                 <label for="exampleInputPassword1"><span class="glyphicon glyphicon-asterisk ét"></span> Confirmez votre mot de passe :</label> 
+                 <div class="input-group inp">
+                     <span class="input-group-addon" id="basic-addon1" ><span class="glyphicon glyphicon-ok" ></span> </span>
+                     <input type="password" class="form-control " placeholder="Passe" aria-describedby="basic-addon1">
+                 </div>
+             </div>
+     
+           <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok"> Valider</span> </button>
+         <!--</div>-->
+         
+        </div>
+        <div class="modal-footer">
+  <p style="color: #337ab7;"><b>les informations que vous saisissez sont utilisées  en interne.</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div style="flex-direction: column;">
+  <img id="Logo" src="Image/Logosabri.PNG" /> 
+
+  <div style="display: flex;justify-content: flex-end;">
+  
+    <button type="button" class="btn btn-outline-info"data-toggle="modal" data-target="#exampleModalCenter" ><span class="glyphicon glyphicon-lock"> Connexion</span></button>
+    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModal"><span class="glyphicon glyphicon-pencil"> Inscription</span></button>
+  
+  </div>
+</div>
+  
+<!--<nav class="navbar navbar-inverse">-->
+    <nav class="navbar navbar-default">
+    <!--<nav class="navbar navbar-light" >--> 
+      <div class="container-fluid"> 
+          
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header"> 
+               
+    
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"> Exposition</span></a>
+        </div>
+            </div>  
+       </nav>
+    <h3>Sghairi Amél</h3><br>
+    <p><span class="glyphicon glyphicon-home"></span>  Galerie d'Art en ligne, vente de peinture </p><hr>
+    
+<div class="row">
+ <div class="col-sm-6 col-md-4 col-lg-3">
+   <div class="thumbnail im">
+     <img src="Image/AS/past.jpg" alt="...">
+      <div class="caption">
+        <h3>Zinna</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+   </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="thumbnail im">
+      <img src="Image/AS/wat2.jpg" alt="...">
+       <div class="caption">
+         <h3>Fleurs</h3>
+         <p>...</p>
+         <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+       </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="thumbnail im">
+      <img src="Image/AS/wat3.jpg" alt="...">
+       <div class="caption">
+         <h3>Flamingo Rose</h3>
+         <p>...</p>
+         <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+       </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="thumbnail im">
+      <img src="Image/AS/wat4.jpg" alt="...">
+       <div class="caption">
+         <h3>Raisins</h3>
+         <p>...</p>
+         <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="path_to_js_file/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
